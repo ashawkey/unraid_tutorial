@@ -2,11 +2,11 @@
 
 
 
-### Problems
+### 问题
 
 Unraid社区应用（Community Applications，CA）插件依赖GitHub（ `github.com` 和 `raw.githubusercontent.com` ）下载数据。
 
-然而，根据[wiki](https://zh.wikipedia.org/wiki/%E5%AF%B9GitHub%E7%9A%84%E5%AE%A1%E6%9F%A5%E5%92%8C%E5%B0%81%E9%94%81)，仅仅修改Hosts的方法已经不够了。本文以[trojan-gfw](https://trojan-gfw.github.io/trojan/)为例描述通过代理访问CA并下载插件的方法。
+然而，根据[wiki](https://zh.wikipedia.org/wiki/%E5%AF%B9GitHub%E7%9A%84%E5%AE%A1%E6%9F%A5%E5%92%8C%E5%B0%81%E9%94%81)，仅仅修改Hosts的方法已经不够了。本文介绍通过[trojan-gfw](https://trojan-gfw.github.io/trojan/)代理访问CA并下载插件的方法。
 
 
 
@@ -37,11 +37,11 @@ Unraid社区应用（Community Applications，CA）插件依赖GitHub（ `github
 
 因为Unraid的终端没有包管理器（替代品Nerd Pack也需要通过CA才能安装），我们选择直接用docker运行代理程序。
 
-这个[Dockerfile例子](https://github.com/ashawkey/trojan-privoxy-client)以trojan为例，如果使用其他工具，需要自己搭建镜像。
+这个[Dockerfile](https://github.com/ashawkey/trojan-privoxy-client)以trojan为例，如果使用其他工具，需要自己搭建镜像。
 
-* 通过终端设置国内Docker镜像源。
+* 通过终端设置国内Docker镜像源（阿里云镜像需要填入自己的[ID](https://www.aliyun.com/product/acr?source=5176.11533457&userCode=8lx5zmtu)）。
 
-  推荐可以把如下命令贴到`go`文件中以实现持久化。
+  推荐贴到`go`文件中以实现持久化。
 
   ```bash
   # docker mirrors
@@ -49,6 +49,7 @@ Unraid社区应用（Community Applications，CA）插件依赖GitHub（ `github
   tee /etc/docker/daemon.json <<- "EOF"
   {
       "registry-mirrors" : [
+          "https://[yourid].mirror.aliyuncs.com",
           "https://registry.docker-cn.com",
           "http://hub-mirror.c.163.com"
       ]
