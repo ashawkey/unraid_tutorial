@@ -48,7 +48,7 @@
   /etc/init.d/network restart
   ```
 
-* 等待网络重启完成，
+* 等待网络重启完成。
 
 Unraid方面需要在设置中更改网络类型为`IPv4+IPv6`，重启Unraid服务器即可看到分配到的ipv6地址，此时设置中的路由表下应有ipv4和ipv6各三条设置，或者通过终端检查：
 

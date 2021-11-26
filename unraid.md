@@ -10,7 +10,7 @@
 
 ### 配置
 
-同样参考[官方教程](https://wiki.unraid.net/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97_-_Chinese_Getting_Started_Guide)即可。视频教程推荐[这里](https://forums.unraid.net/topic/113327-%E6%9C%80%E8%AF%A6%E5%B0%BD%E7%9A%84unraid%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/)。
+同样参考[官方教程](https://wiki.unraid.net/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97_-_Chinese_Getting_Started_Guide)即可，视频教程推荐[这里](https://forums.unraid.net/topic/113327-%E6%9C%80%E8%AF%A6%E5%B0%BD%E7%9A%84unraid%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/)。
 
 一些基本的设置：
 
@@ -18,7 +18,7 @@
 * 启动磁盘阵列，创建共享文件夹。
 * 启动Docker。
 
-配置完成后就可以通过NFS/SMB等服务在内网其他机器上进行访问共享文件夹了！
+配置完成后就可以通过SMB等服务在内网其他机器上进行访问共享文件夹了！
 
 但为了获得更完整的体验，还需要安装各种Docker服务，详见[这里](./docker_app.md)。
 
@@ -70,3 +70,12 @@ alias python="python3"
 EOF
 ```
 
+
+
+
+
+### References
+
+* https://post.smzdm.com/p/aoow5ml7/
+* https://zhuanlan.zhihu.com/p/152203435
+* https://forums.unraid.net/forum/88-chinese-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/
