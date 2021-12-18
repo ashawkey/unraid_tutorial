@@ -8,4 +8,4 @@
 
 考虑到诸多因素，最终选择了普通ITX机箱+Unraid OS的搭配。目前流传的众多Unraid教程多多少少有些重要的部分已经失效，也不太适合校园网下的配置，故在基本稳定运行后总结了这篇指南，希望能够帮到有类似（奇怪）需求的人。
 
-[点击此处阅读](https://ashawkey.github.io/unraid_tutorial)
+[点击此处阅读](https://ashawkey.github.io/unraid_tutorial/)
