@@ -1,0 +1,31 @@
+site_name: Unraid Tutorial
+theme:
+  name: material
+  palette:
+    primary: grey
+    accent: amber
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top # back-to-top button
+nav:
+  - 'index.md'
+  - 'hardware.md'
+  - 'unraid.md'
+  - 'proxy.md'
+  - 'docker_app.md'
+  - 'ipv6.md'
+  - 'remote_access.md'
+repo_url: https://github.com/ashawkey/unraid_tutorial
+plugins:
+  - search
+markdown_extensions:
+  - tables  
+  - pymdownx.betterem
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences  
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - mdx_truly_sane_lists # fix typora 2 space indentation, ref: https://github.com/mkdocs/mkdocs/issues/545
